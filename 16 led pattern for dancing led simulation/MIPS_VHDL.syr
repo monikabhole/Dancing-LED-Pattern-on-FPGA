@@ -1,0 +1,682 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: MIPS_VHDL.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MIPS_VHDL.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MIPS_VHDL"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : MIPS_VHDL
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\ASUS\Desktop\vhdl\new code mips\CO Assignment ENT308 Sources 2019-20\sources_1\imports\RF.vhd" into library work
+Parsing entity <register_file_VHDL>.
+Parsing architecture <Behavioral> of entity <register_file_vhdl>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\vhdl\new code mips\CO Assignment ENT308 Sources 2019-20\sources_1\imports\IM_vhdl.vhd" into library work
+Parsing entity <Instruction_Memory_VHDL>.
+Parsing architecture <Behavioral> of entity <instruction_memory_vhdl>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\vhdl\new code mips\CO Assignment ENT308 Sources 2019-20\sources_1\imports\dm_vhdl.vhd" into library work
+Parsing entity <Data_Memory_VHDL>.
+Parsing architecture <Behavioral> of entity <data_memory_vhdl>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\vhdl\new code mips\CO Assignment ENT308 Sources 2019-20\sources_1\imports\cntl_MIPS.vhd" into library work
+Parsing entity <control_unit_VHDL>.
+Parsing architecture <Behavioral> of entity <control_unit_vhdl>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\vhdl\new code mips\CO Assignment ENT308 Sources 2019-20\sources_1\imports\alu_cntl.vhd" into library work
+Parsing entity <ALU_Control_VHDL>.
+Parsing architecture <Behavioral> of entity <alu_control_vhdl>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\vhdl\new code mips\CO Assignment ENT308 Sources 2019-20\sources_1\imports\alu.vhd" into library work
+Parsing entity <ALU_VHDL>.
+Parsing architecture <Behavioral> of entity <alu_vhdl>.
+Parsing VHDL file "C:\Users\ASUS\Desktop\vhdl\new code mips\CO Assignment ENT308 Sources 2019-20\sources_1\imports\MIPS.vhd" into library work
+Parsing entity <MIPS_VHDL>.
+Parsing architecture <Behavioral> of entity <mips_vhdl>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <MIPS_VHDL> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Instruction_Memory_VHDL> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <control_unit_VHDL> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\vhdl\new code mips\CO Assignment ENT308 Sources 2019-20\sources_1\imports\cntl_MIPS.vhd" Line 119. Case statement is complete. others clause is never selected
+
+Elaborating entity <register_file_VHDL> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\ASUS\Desktop\vhdl\new code mips\CO Assignment ENT308 Sources 2019-20\sources_1\imports\RF.vhd" Line 39: reg_array should be on the sensitivity list of the process
+
+Elaborating entity <ALU_Control_VHDL> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\ASUS\Desktop\vhdl\new code mips\CO Assignment ENT308 Sources 2019-20\sources_1\imports\alu_cntl.vhd" Line 25. Case statement is complete. others clause is never selected
+
+Elaborating entity <ALU_VHDL> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Data_Memory_VHDL> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <MIPS_VHDL>.
+    Related source file is "C:\Users\ASUS\Desktop\vhdl\new code mips\CO Assignment ENT308 Sources 2019-20\sources_1\imports\MIPS.vhd".
+    Found 16-bit register for signal <pc_out>.
+    Found 16-bit adder for signal <pc2> created at line 50.
+    Found 16-bit adder for signal <no_sign_ext> created at line 124.
+    Found 16-bit adder for signal <pc2[15]_im_shift_1[15]_add_19_OUT> created at line 126.
+    Found 16-bit subtractor for signal <pc2[15]_no_sign_ext[15]_sub_21_OUT<15:0>> created at line 126.
+    Found 3-bit 4-to-1 multiplexer for signal <reg_write_dest> created at line 20.
+    Found 16-bit 4-to-1 multiplexer for signal <reg_write_data> created at line 21.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+Unit <MIPS_VHDL> synthesized.
+
+Synthesizing Unit <Instruction_Memory_VHDL>.
+    Related source file is "C:\Users\ASUS\Desktop\vhdl\new code mips\CO Assignment ENT308 Sources 2019-20\sources_1\imports\IM_vhdl.vhd".
+    Found 16-bit comparator greater for signal <pc[15]_GND_7_o_LessThan_2_o> created at line 47
+    Summary:
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <Instruction_Memory_VHDL> synthesized.
+
+Synthesizing Unit <control_unit_VHDL>.
+    Related source file is "C:\Users\ASUS\Desktop\vhdl\new code mips\CO Assignment ENT308 Sources 2019-20\sources_1\imports\cntl_MIPS.vhd".
+    Summary:
+	inferred  10 Multiplexer(s).
+Unit <control_unit_VHDL> synthesized.
+
+Synthesizing Unit <register_file_VHDL>.
+    Related source file is "C:\Users\ASUS\Desktop\vhdl\new code mips\CO Assignment ENT308 Sources 2019-20\sources_1\imports\RF.vhd".
+    Found 16-bit register for signal <reg_array<3>>.
+    Found 16-bit register for signal <reg_array<1>>.
+    Found 16-bit register for signal <reg_array<4>>.
+    Found 16-bit register for signal <reg_array<6>>.
+    Found 16-bit register for signal <reg_array<7>>.
+    Found 16-bit register for signal <reg_array<0>>.
+    Found 16-bit register for signal <reg_array<5>>.
+    Found 16-bit register for signal <reg_array<2>>.
+    Found 16-bit 8-to-1 multiplexer for signal <reg_read_addr_1[2]_reg_array[7][15]_wide_mux_27_OUT> created at line 42.
+    Found 16-bit 8-to-1 multiplexer for signal <reg_read_addr_2[2]_reg_array[7][15]_wide_mux_30_OUT> created at line 43.
+    Summary:
+	inferred 128 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <register_file_VHDL> synthesized.
+
+Synthesizing Unit <ALU_Control_VHDL>.
+    Related source file is "C:\Users\ASUS\Desktop\vhdl\new code mips\CO Assignment ENT308 Sources 2019-20\sources_1\imports\alu_cntl.vhd".
+    Summary:
+	no macro.
+Unit <ALU_Control_VHDL> synthesized.
+
+Synthesizing Unit <ALU_VHDL>.
+    Related source file is "C:\Users\ASUS\Desktop\vhdl\new code mips\CO Assignment ENT308 Sources 2019-20\sources_1\imports\alu.vhd".
+    Found 16-bit adder for signal <a[15]_b[15]_add_6_OUT> created at line 34.
+    Found 16-bit subtractor for signal <a[15]_b[15]_sub_2_OUT<15:0>> created at line 23.
+    Found 16-bit 7-to-1 multiplexer for signal <result> created at line 19.
+    Found 16-bit comparator greater for signal <b[15]_a[15]_LessThan_5_o> created at line 29
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <ALU_VHDL> synthesized.
+
+Synthesizing Unit <Data_Memory_VHDL>.
+    Related source file is "C:\Users\ASUS\Desktop\vhdl\new code mips\CO Assignment ENT308 Sources 2019-20\sources_1\imports\dm_vhdl.vhd".
+WARNING:Xst:647 - Input <mem_access_addr<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <mem_access_addr<15:9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 256x16-bit single-port RAM <Mram_RAM> for signal <RAM>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <Data_Memory_VHDL> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x16-bit single-port RAM                            : 1
+# Adders/Subtractors                                   : 6
+ 16-bit adder                                          : 4
+ 16-bit subtractor                                     : 2
+# Registers                                            : 9
+ 16-bit register                                       : 9
+# Comparators                                          : 2
+ 16-bit comparator greater                             : 2
+# Multiplexers                                         : 25
+ 1-bit 2-to-1 multiplexer                              : 7
+ 16-bit 2-to-1 multiplexer                             : 10
+ 16-bit 4-to-1 multiplexer                             : 1
+ 16-bit 7-to-1 multiplexer                             : 1
+ 16-bit 8-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 3
+ 3-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Data_Memory_VHDL>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 16-bit                   |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <mem_write_en>  | high     |
+    |     addrA          | connected to signal <mem_access_addr> |          |
+    |     diA            | connected to signal <mem_write_data> |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Data_Memory_VHDL> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x16-bit single-port distributed RAM                : 1
+# Adders/Subtractors                                   : 5
+ 16-bit adder                                          : 3
+ 16-bit subtractor                                     : 1
+ 16-bit subtractor borrow in                           : 1
+# Registers                                            : 144
+ Flip-Flops                                            : 144
+# Comparators                                          : 2
+ 16-bit comparator greater                             : 2
+# Multiplexers                                         : 55
+ 1-bit 2-to-1 multiplexer                              : 7
+ 1-bit 8-to-1 multiplexer                              : 32
+ 16-bit 2-to-1 multiplexer                             : 10
+ 16-bit 4-to-1 multiplexer                             : 1
+ 16-bit 7-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 3
+ 3-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <pc_current_0> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <data_memory/Mram_RAM1> of sequential type is unconnected in block <MIPS_VHDL>.
+WARNING:Xst:2677 - Node <data_memory/Mram_RAM2> of sequential type is unconnected in block <MIPS_VHDL>.
+WARNING:Xst:2677 - Node <data_memory/Mram_RAM3> of sequential type is unconnected in block <MIPS_VHDL>.
+WARNING:Xst:2677 - Node <data_memory/Mram_RAM4> of sequential type is unconnected in block <MIPS_VHDL>.
+WARNING:Xst:2677 - Node <data_memory/Mram_RAM5> of sequential type is unconnected in block <MIPS_VHDL>.
+WARNING:Xst:2677 - Node <data_memory/Mram_RAM6> of sequential type is unconnected in block <MIPS_VHDL>.
+WARNING:Xst:2677 - Node <data_memory/Mram_RAM7> of sequential type is unconnected in block <MIPS_VHDL>.
+WARNING:Xst:2677 - Node <data_memory/Mram_RAM8> of sequential type is unconnected in block <MIPS_VHDL>.
+WARNING:Xst:2677 - Node <data_memory/Mram_RAM9> of sequential type is unconnected in block <MIPS_VHDL>.
+WARNING:Xst:2677 - Node <data_memory/Mram_RAM10> of sequential type is unconnected in block <MIPS_VHDL>.
+WARNING:Xst:2677 - Node <data_memory/Mram_RAM11> of sequential type is unconnected in block <MIPS_VHDL>.
+WARNING:Xst:2677 - Node <data_memory/Mram_RAM12> of sequential type is unconnected in block <MIPS_VHDL>.
+WARNING:Xst:2677 - Node <data_memory/Mram_RAM13> of sequential type is unconnected in block <MIPS_VHDL>.
+WARNING:Xst:2677 - Node <data_memory/Mram_RAM14> of sequential type is unconnected in block <MIPS_VHDL>.
+WARNING:Xst:2677 - Node <data_memory/Mram_RAM15> of sequential type is unconnected in block <MIPS_VHDL>.
+WARNING:Xst:2677 - Node <data_memory/Mram_RAM16> of sequential type is unconnected in block <MIPS_VHDL>.
+
+Optimizing unit <MIPS_VHDL> ...
+
+Optimizing unit <register_file_VHDL> ...
+
+Optimizing unit <ALU_VHDL> ...
+WARNING:Xst:1710 - FF/Latch <register_file/reg_array_6_15> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_6_14> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_6_13> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_6_12> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_6_11> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_6_10> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_6_9> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_6_8> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_6_7> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_6_6> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_6_5> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_6_4> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_6_3> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_6_2> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_6_1> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_6_0> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_4_15> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_4_14> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_4_13> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_4_12> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_4_11> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_4_10> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_4_9> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_4_8> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_4_7> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_4_6> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_4_5> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_4_4> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_4_3> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_4_2> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_4_1> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_4_0> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_5_15> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_5_14> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_5_13> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_5_12> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_5_11> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_5_10> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_5_9> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_5_8> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_5_7> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_5_6> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_5_5> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_5_4> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_5_3> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_5_2> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_5_1> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_5_0> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_7_15> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_7_14> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_7_13> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_7_12> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_7_11> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_7_10> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_7_9> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_7_8> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_7_7> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_7_6> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_7_5> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_7_4> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_7_3> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_7_2> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_7_1> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_7_0> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <register_file/reg_array_0_7> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_0_6> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_0_5> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_0_4> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_0_3> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_0_2> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_0_1> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_0_0> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_3_15> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_3_14> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_3_13> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_3_12> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_3_11> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_3_10> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_3_9> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_3_8> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_3_7> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_3_6> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_3_5> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_3_4> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_3_3> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_3_2> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_3_1> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_3_0> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_2_15> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_2_14> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_2_13> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_2_12> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_2_11> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_2_10> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_2_9> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_2_8> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_2_7> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_2_6> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_2_5> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_2_4> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_2_3> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_2_2> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_2_1> (without init value) has a constant value of 1 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_2_0> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_0_15> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_0_14> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_0_13> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_0_12> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_0_11> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_0_10> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_0_9> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <register_file/reg_array_0_8> (without init value) has a constant value of 0 in block <MIPS_VHDL>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <register_file/reg_array_1_0> in Unit <MIPS_VHDL> is equivalent to the following 2 FFs/Latches, which will be removed : <register_file/reg_array_1_14> <register_file/reg_array_1_10> 
+INFO:Xst:2261 - The FF/Latch <register_file/reg_array_1_1> in Unit <MIPS_VHDL> is equivalent to the following 2 FFs/Latches, which will be removed : <register_file/reg_array_1_13> <register_file/reg_array_1_11> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MIPS_VHDL, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 27
+ Flip-Flops                                            : 27
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : MIPS_VHDL.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 179
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 14
+#      LUT3                        : 1
+#      LUT4                        : 1
+#      LUT5                        : 15
+#      LUT6                        : 54
+#      MUXCY                       : 44
+#      VCC                         : 1
+#      XORCY                       : 47
+# FlipFlops/Latches                : 27
+#      FDC                         : 15
+#      FDCE                        : 12
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 49
+#      IBUF                        : 1
+#      OBUF                        : 48
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              27  out of  18224     0%  
+ Number of Slice LUTs:                   86  out of   9112     0%  
+    Number used as Logic:                86  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     86
+   Number with an unused Flip Flop:      59  out of     86    68%  
+   Number with an unused LUT:             0  out of     86     0%  
+   Number of fully used LUT-FF pairs:    27  out of     86    31%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          50
+ Number of bonded IOBs:                  50  out of    232    21%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 27    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.442ns (Maximum Frequency: 183.773MHz)
+   Minimum input arrival time before clock: 5.069ns
+   Maximum output required time after clock: 9.322ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.442ns (frequency: 183.773MHz)
+  Total number of paths / destination ports: 5370 / 39
+-------------------------------------------------------------------------
+Delay:               5.442ns (Levels of Logic = 19)
+  Source:            pc_current_3 (FF)
+  Destination:       register_file/reg_array_1_15 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: pc_current_3 to register_file/reg_array_1_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.525   1.296  pc_current_3 (pc_current_3)
+     LUT6:I0->O           16   0.254   1.290  Mmux_pc_next1511_1 (Mmux_pc_next15111)
+     LUT4:I2->O            0   0.250   0.000  imm_ext<0>1 (ALU_Control<0>)
+     MUXCY:DI->O           1   0.181   0.000  alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<0> (alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<1> (alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<2> (alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<3> (alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<4> (alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<5> (alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<6> (alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<7> (alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<8> (alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<9> (alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<10> (alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<11> (alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<12> (alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<13> (alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<13>)
+     MUXCY:CI->O           0   0.023   0.000  alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<14> (alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_cy<14>)
+     XORCY:CI->O           1   0.206   0.790  alu/Msub_a[15]_b[15]_sub_2_OUT<15:0>_xor<15> (alu/a[15]_b[15]_sub_2_OUT<15>)
+     LUT6:I4->O            2   0.250   0.000  alu/Mmux_result71 (alu_result_15_OBUF)
+     FDCE:D                    0.074          register_file/reg_array_1_15
+    ----------------------------------------
+    Total                      5.442ns (2.066ns logic, 3.376ns route)
+                                       (38.0% logic, 62.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 53 / 53
+-------------------------------------------------------------------------
+Offset:              5.069ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       register_file/reg_array_1_15 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to register_file/reg_array_1_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            42   1.328   2.117  reset_IBUF (reset_IBUF)
+     LUT5:I0->O           12   0.254   1.068  register_file/_n0083_inv4 (register_file/_n0083_inv)
+     FDCE:CE                   0.302          register_file/reg_array_1_0
+    ----------------------------------------
+    Total                      5.069ns (1.884ns logic, 3.185ns route)
+                                       (37.2% logic, 62.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 7967 / 47
+-------------------------------------------------------------------------
+Offset:              9.322ns (Levels of Logic = 19)
+  Source:            pc_current_3 (FF)
+  Destination:       alu_result<14> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: pc_current_3 to alu_result<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.525   1.296  pc_current_3 (pc_current_3)
+     LUT6:I0->O           16   0.254   1.290  Mmux_pc_next1511_1 (Mmux_pc_next15111)
+     LUT6:I4->O            1   0.250   0.000  alu/Madd_a[15]_b[15]_add_6_OUT_lut<0> (alu/Madd_a[15]_b[15]_add_6_OUT_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  alu/Madd_a[15]_b[15]_add_6_OUT_cy<0> (alu/Madd_a[15]_b[15]_add_6_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Madd_a[15]_b[15]_add_6_OUT_cy<1> (alu/Madd_a[15]_b[15]_add_6_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Madd_a[15]_b[15]_add_6_OUT_cy<2> (alu/Madd_a[15]_b[15]_add_6_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Madd_a[15]_b[15]_add_6_OUT_cy<3> (alu/Madd_a[15]_b[15]_add_6_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Madd_a[15]_b[15]_add_6_OUT_cy<4> (alu/Madd_a[15]_b[15]_add_6_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Madd_a[15]_b[15]_add_6_OUT_cy<5> (alu/Madd_a[15]_b[15]_add_6_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Madd_a[15]_b[15]_add_6_OUT_cy<6> (alu/Madd_a[15]_b[15]_add_6_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Madd_a[15]_b[15]_add_6_OUT_cy<7> (alu/Madd_a[15]_b[15]_add_6_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Madd_a[15]_b[15]_add_6_OUT_cy<8> (alu/Madd_a[15]_b[15]_add_6_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Madd_a[15]_b[15]_add_6_OUT_cy<9> (alu/Madd_a[15]_b[15]_add_6_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Madd_a[15]_b[15]_add_6_OUT_cy<10> (alu/Madd_a[15]_b[15]_add_6_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Madd_a[15]_b[15]_add_6_OUT_cy<11> (alu/Madd_a[15]_b[15]_add_6_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Madd_a[15]_b[15]_add_6_OUT_cy<12> (alu/Madd_a[15]_b[15]_add_6_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  alu/Madd_a[15]_b[15]_add_6_OUT_cy<13> (alu/Madd_a[15]_b[15]_add_6_OUT_cy<13>)
+     XORCY:CI->O           1   0.206   1.137  alu/Madd_a[15]_b[15]_add_6_OUT_xor<14> (alu/a[15]_b[15]_add_6_OUT<14>)
+     LUT6:I0->O            1   0.254   0.681  alu/Mmux_result61 (alu_result_14_OBUF)
+     OBUF:I->O                 2.912          alu_result_14_OBUF (alu_result<14>)
+    ----------------------------------------
+    Total                      9.322ns (4.918ns logic, 4.404ns route)
+                                       (52.8% logic, 47.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.442|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.13 secs
+ 
+--> 
+
+Total memory usage is 4539804 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  132 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

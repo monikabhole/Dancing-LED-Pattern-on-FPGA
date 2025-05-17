@@ -1,0 +1,8 @@
+vhdl work "../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/RF.vhd"
+vhdl work "../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/IM_vhdl.vhd"
+vhdl work "../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/dm_vhdl.vhd"
+vhdl work "../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/cntl_MIPS.vhd"
+vhdl work "../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/alu_cntl.vhd"
+vhdl work "../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/alu.vhd"
+vhdl work "../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/MIPS.vhd"
+vhdl work "../new code mips/CO Assignment ENT308 Sources 2019-20/sim_1/imports/mips16_fpga4student/mips_tb.vhd"

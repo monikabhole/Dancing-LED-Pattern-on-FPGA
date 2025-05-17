@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="mona.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Instruction_Memory_VHDL_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Instruction_Memory_VHDL_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MIPS_VHDL.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MIPS_VHDL.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="MIPS_VHDL.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="MIPS_VHDL.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MIPS_VHDL.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="MIPS_VHDL.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="MIPS_VHDL.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MIPS_VHDL.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MIPS_VHDL_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MIPS_VHDL_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MIPS_VHDL_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="register_file_VHDL_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_MIPS_VHDL_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_MIPS_VHDL_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_MIPS_VHDL_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_MIPS_VHDL_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1585680678" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1585680678">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1586376026" xil_pn:in_ck="3267582763726643521" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1586376026">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../new code mips/CO Assignment ENT308 Sources 2019-20/sim_1/imports/mips16_fpga4student/mips_tb.vhd"/>
+      <outfile xil_pn:name="../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/IM_vhdl.vhd"/>
+      <outfile xil_pn:name="../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/MIPS.vhd"/>
+      <outfile xil_pn:name="../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/RF.vhd"/>
+      <outfile xil_pn:name="../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/alu.vhd"/>
+      <outfile xil_pn:name="../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/alu_cntl.vhd"/>
+      <outfile xil_pn:name="../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/cntl_MIPS.vhd"/>
+      <outfile xil_pn:name="../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/dm_vhdl.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1586372960" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7137548174981694257" xil_pn:start_ts="1586372960">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1586372960" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3784882110018545233" xil_pn:start_ts="1586372960">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1585680678" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4115698706914622773" xil_pn:start_ts="1585680678">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1586376026" xil_pn:in_ck="3267582763726643521" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1586376026">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../new code mips/CO Assignment ENT308 Sources 2019-20/sim_1/imports/mips16_fpga4student/mips_tb.vhd"/>
+      <outfile xil_pn:name="../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/IM_vhdl.vhd"/>
+      <outfile xil_pn:name="../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/MIPS.vhd"/>
+      <outfile xil_pn:name="../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/RF.vhd"/>
+      <outfile xil_pn:name="../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/alu.vhd"/>
+      <outfile xil_pn:name="../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/alu_cntl.vhd"/>
+      <outfile xil_pn:name="../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/cntl_MIPS.vhd"/>
+      <outfile xil_pn:name="../new code mips/CO Assignment ENT308 Sources 2019-20/sources_1/imports/dm_vhdl.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1586376030" xil_pn:in_ck="3267582763726643521" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="248961793656586306" xil_pn:start_ts="1586376026">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_MIPS_VHDL_beh.prj"/>
+      <outfile xil_pn:name="tb_MIPS_VHDL_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1586376631" xil_pn:in_ck="1331095706120083360" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6234964248794640785" xil_pn:start_ts="1586376631">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_MIPS_VHDL_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1586338355" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1586338355">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1586338355" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7863304455855473625" xil_pn:start_ts="1586338355">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1586338355" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="4115698706914622773" xil_pn:start_ts="1586338355">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1586338355" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1586338355">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1586338355" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-3610235107492763159" xil_pn:start_ts="1586338355">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1586338355" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1586338355">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1586338355" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="7803436023321343231" xil_pn:start_ts="1586338355">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1586376190" xil_pn:in_ck="4372118672708646148" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-1256796146377423602" xil_pn:start_ts="1586376173">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="MIPS_VHDL.lso"/>
+      <outfile xil_pn:name="MIPS_VHDL.ngc"/>
+      <outfile xil_pn:name="MIPS_VHDL.ngr"/>
+      <outfile xil_pn:name="MIPS_VHDL.prj"/>
+      <outfile xil_pn:name="MIPS_VHDL.stx"/>
+      <outfile xil_pn:name="MIPS_VHDL.syr"/>
+      <outfile xil_pn:name="MIPS_VHDL.xst"/>
+      <outfile xil_pn:name="MIPS_VHDL_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
+
+</generated_project>

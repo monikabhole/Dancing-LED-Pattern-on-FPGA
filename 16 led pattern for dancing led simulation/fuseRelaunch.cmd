@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/ASUS/Desktop/vhdl/mona/tb_MIPS_VHDL_isim_beh.exe" -prj "C:/Users/ASUS/Desktop/vhdl/mona/tb_MIPS_VHDL_beh.prj" "work.tb_MIPS_VHDL" 
